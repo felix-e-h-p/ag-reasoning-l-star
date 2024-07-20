@@ -1,0 +1,12 @@
+type: dfa
+states: ['s0', 's1']
+alphabet: ['x', 'y']
+start_state: 's0'
+accept_states: ['s1']
+transitions:
+  's0':
+    'x': 's1'
+    'y': 's0'
+  's1':
+    'x': 's0'
+    'y': 's1'
