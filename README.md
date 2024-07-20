@@ -1,6 +1,10 @@
 # AG Reasoning Framework
 
-This repository implements the Assume Guarantee (AG) Reasoning framework using Angluin's L* algorithm for learning deterministic finite automata (DFA), considering the domain of autonomous vehicles and related decision processes. It includes various optimisation methods to enhance the efficiency of the learning process.
+Python implementation of the L* based Assume Guarantee Reasoning framework, specifically designed to support the verification and validation of dynamic input deterministic finite automata (DFAs). The framework integrates five distinct optimisation methods to enhance operational efficiency.
+
+The primary application domain for this implementation is autonomous vehicles, whereby the ability to dynamically adapt to changing inputs and conditions is critical. By employing framework, this tool can systematically learn and refine the models of autonomous vehicle behavior, ensuring that the vehicles operate safely and efficiently in a variety of environments. The optimisations embedded in the framework are tailored to handle the real-time demands and intricate decision-making processes inherent in autonomous driving systems.
+
+Extensive testing and validation has been conducted using autonomous vehicle behaviour as a benchmark, demonstrating the practical utility and reliability of the framework. The integration of multiple optimisation methods has shown significant improvements in the learning speed and accuracy of the models, making this tool highly suitable for real-world applications whereby dynamic input DFAs are utilised.
 
 ## Table of Contents
 
@@ -14,7 +18,7 @@ This repository implements the Assume Guarantee (AG) Reasoning framework using A
 
 ## Installation
 
-To set up the project, Python 3.6+ must be installed.
+Python 3.6 as standard
 
 ## Usage
 
@@ -26,7 +30,7 @@ Navigate to the respective directory and run the run_ag.py script to execute the
 
 It must be noted that the ag directory is simply L* based AG Reasoning without any form of optimisation or subsequent related alterations. 
 
-It also must be noted that ag includes standardised unit testing functions and opt_5 includes context-aware adjustment functionality.
+It also must be noted that ag includes standardised unit testing functions, whilst opt_5 includes context-aware adjustment functionality.
 
 ## Configuration
 
@@ -53,7 +57,6 @@ This method dynamically selects queries based on the current state of the learni
 ### Optimisation Method 5: Reuse of Counterexamples
 
 This method improves the hypothesis merging process to reduce the number of iterations required for convergence.
-
 
 ## References
 
