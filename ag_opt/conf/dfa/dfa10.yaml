@@ -1,0 +1,18 @@
+type: dfa
+states: ['Green', 'Yellow', 'Red']
+alphabet: ['G', 'Y', 'R']
+start_state: 'Red'
+accept_states: ['Green']
+transitions:
+  'Red':
+    'G': 'Green'
+    'Y': 'Red'
+    'R': 'Red'
+  'Green':
+    'G': 'Green'
+    'Y': 'Yellow'
+    'R': 'Red'
+  'Yellow':
+    'G': 'Green'
+    'Y': 'Yellow'
+    'R': 'Red'
