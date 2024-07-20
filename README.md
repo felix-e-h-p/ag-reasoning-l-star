@@ -1,4 +1,4 @@
-# AG Reasoning Framework
+# Optimised L* Based AG Reasoning Framework
 
 Python implementation of the L* based Assume Guarantee Reasoning framework, specifically designed to support the verification and validation of dynamic input deterministic finite automata (DFAs). The framework integrates five distinct optimisation methods to enhance operational efficiency.
 
