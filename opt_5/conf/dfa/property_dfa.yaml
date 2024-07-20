@@ -1,0 +1,35 @@
+states:
+  - p0
+  - p1
+  - p2
+  - p3
+  - p4
+alphabet:
+  - a
+  - b
+  - c
+start_state: p0
+accept_states:
+  - p3
+  - p4
+transitions:
+  p0:
+    a: p1
+    b: p2
+    c: p0
+  p1:
+    a: p3
+    b: p4
+    c: p0
+  p2:
+    a: p4
+    b: p1
+    c: p0
+  p3:
+    a: p3
+    b: p3
+    c: p0
+  p4:
+    a: p4
+    b: p4
+    c: p0

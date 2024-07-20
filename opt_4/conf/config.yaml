@@ -1,0 +1,31 @@
+defaults:
+  - _self_
+  - override hydra/job_logging: default
+  - override hydra/hydra_logging: default
+
+hydra:
+  run:
+    dir: ../outputs/${now:%Y-%m-%d}/${now:%H-%M-%S}
+
+project:
+  name: l_star_ag
+  version: 1.0
+
+training:
+  search_depth: 3
+  max_length: 4
+  num_runs: 1000
+  
+dfas:
+  dfa1: dfa/dfa1.yaml
+  dfa2: dfa/dfa2.yaml
+  dfa3: dfa/dfa3.yaml
+  dfa4: dfa/dfa4.yaml
+  dfa5: dfa/dfa5.yaml
+  dfa6: dfa/dfa6.yaml
+  dfa7: dfa/dfa7.yaml
+  dfa8: dfa/dfa8.yaml
+  dfa9: dfa/dfa9.yaml
+  dfa10: dfa/dfa10.yaml
+  dfa11: dfa/dfa11.yaml
+  dfa12: dfa/dfa12.yaml

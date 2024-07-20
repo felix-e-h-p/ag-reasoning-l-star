@@ -1,0 +1,8 @@
+hydra-core==1.1.0
+PyYAML==5.4.1
+omegaconf==2.1.1
+tracemalloc
+itertools
+matplotlib==3.4.2
+seaborn==0.11.2
+pandas==1.3.3

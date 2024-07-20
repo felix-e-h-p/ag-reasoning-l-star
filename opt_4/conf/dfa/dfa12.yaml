@@ -1,0 +1,24 @@
+states:
+  - LaneKeeping
+  - LaneChangingLeft
+  - LaneChangingRight
+alphabet:
+  - LK
+  - LCL
+  - LCR
+start_state: LaneKeeping
+accept_states:
+  - LaneKeeping
+transitions:
+  LaneKeeping:
+    LK: LaneKeeping
+    LCL: LaneChangingLeft
+    LCR: LaneChangingRight
+  LaneChangingLeft:
+    LK: LaneKeeping
+    LCL: LaneChangingLeft
+    LCR: LaneChangingRight
+  LaneChangingRight:
+    LK: LaneKeeping
+    LCL: LaneChangingLeft
+    LCR: LaneChangingRight

@@ -1,0 +1,15 @@
+type: dfa
+states: ['Driving', 'Braking', 'Stopped']
+alphabet: ['B', 'S']
+start_state: 'Driving'
+accept_states: ['Stopped']
+transitions:
+  'Driving':
+    'B': 'Braking'
+    'S': 'Driving'
+  'Braking':
+    'B': 'Braking'
+    'S': 'Stopped'
+  'Stopped':
+    'B': 'Braking'
+    'S': 'Stopped'

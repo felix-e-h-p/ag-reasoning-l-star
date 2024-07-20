@@ -1,0 +1,40 @@
+states:
+  - q0
+  - q1
+  - q2
+  - q3
+  - q4
+  - q5
+alphabet:
+  - a
+  - b
+  - c
+start_state: q0
+accept_states:
+  - q3
+  - q4
+transitions:
+  q0:
+    a: q1
+    b: q2
+    c: q5
+  q1:
+    a: q3
+    b: q4
+    c: q5
+  q2:
+    a: q4
+    b: q1
+    c: q5
+  q3:
+    a: q3
+    b: q3
+    c: q5
+  q4:
+    a: q4
+    b: q4
+    c: q5
+  q5:
+    a: q5
+    b: q5
+    c: q5
