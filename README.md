@@ -18,7 +18,7 @@ Extensive testing and validation has been conducted using autonomous vehicle beh
 
 ## Installation
 
-Python 3.6 as standard
+Python 3.6 as standard - please check requirements.txt for dependencies.
 
 ## Usage
 
